@@ -22,8 +22,6 @@ class ChatHandler implements URLHandler {
       } else {
         return "Invalid parameters: " + String.join("&", params);
       }
-    } else if (url.getPath().equals("/")) {
-      return this.chatHistory;
     }
     // expect /retrieve-history?file=<name>
     else if (url.getPath().equals("/retrieve-history")) {
