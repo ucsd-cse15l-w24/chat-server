@@ -101,7 +101,7 @@ class ChatHandler implements URLHandler {
       
       return matchingMessages;
     }
-    return "404 Not Found";
+    return this.chatHistory;
   }
 
   class ChatServer {
