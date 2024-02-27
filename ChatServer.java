@@ -60,7 +60,7 @@ class ChatHandler implements URLHandler {
       }
     }
 
-    return "404 Not Found";
+    return this.chatHistory;
   }
 }
 
